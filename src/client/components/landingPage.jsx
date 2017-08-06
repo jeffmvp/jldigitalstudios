@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router'
 import '../css/grid';
+import '../css/hero';
 import '../css/landingPage';
 
 export default class extends React.Component {
@@ -126,17 +127,26 @@ export default class extends React.Component {
 
 	render() {
 		return (
-			<div className="landing-page grid">
-				<div className="main-title-container">
-					<div className="grid-row-item-row title-row">
-						<div className="grid-item title">Main mantra of you company goes here</div>
-						<div className="grid-item slogan">Why you are so good, bla-bla-bla, and why you will change the world</div>
+			<div className="main">
+				<div className="Hero">
+					<div className="Hero-container">
+						<div className="grid">
+							<div className="grid__col grid__col--3-of-5">
+								<h2>JL Digital Solutions </h2>
+								<h1>Design, Build, Maintain</h1>
+								<div className="grid-row-item-row title-row">
+									<p className="grid-item title">We help businesses reach their goals in the digital marketspace by offering competitive pricing, quick turn arounds, and quality results. </p>
+									<p className="grid-item slogan">International and local clients alike have found our craftsmanship well suited for their growing needs as a business. We have ever growing experience in fields relating to insurance, real estate, restaurants, ecommerce, and many others.</p>
+								</div>
+								<div className="grid-row-item-col button-row">
+									<a id="#travel" onClick={this.animateAndScroll} className="btn btn-primary btn-space-col btn-large-size">Services</a>
+									<a id="#manager" onClick={this.animateAndScroll} className="btn btn-primary btn-large-size btn-space-col">Industries</a>
+									<a id="#host" onClick={this.animateAndScroll} className="btn btn-primary btn-large-size btn-space-col">Contact</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div className="grid-row-item-col button-row">
-						<a id="#travel" onClick={this.animateAndScroll} className="btn btn-primary btn-space-col btn-large-size">Services</a>
-						<a id="#manager" onClick={this.animateAndScroll} className="btn btn-primary btn-large-size btn-space-col">Industries</a>
-						<a id="#host" onClick={this.animateAndScroll} className="btn btn-primary btn-large-size btn-space-col">Contact</a>
-					</div>
+
 				</div>
 				{this.renderHelpSections()}
 				<div className="grid-row-item-col subfooter">
