@@ -1,0 +1,79 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Jeff\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js -v
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-StaticC:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.1.0\bin;C:\Users\Jeff\AppData\Local\atom\bin;C:\Users\Jeff\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Jeff\AppData\Local\.meteor\;C:\Users\Jeff\AppData\Roaming\npm;C:\Users\Jeff\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  6.11.2
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "react-landing-pages",
+    "version": "0.0.1",
+    "description": "A collection of landing pages for react.js",
+    "main": "./src/entry.js",
+    "homepage": "http://github.com/davidlygagnon/react-landing-pages",
+    "author": "David Ly-Gagnon",
+    "license": "MIT",
+    "scripts": {
+      "dev": "webpack --config ./webpack.config.js --progress --colors && node ./src/server/server.js",
+      "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
+      "start": "node ./src/server/server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/davidlygagnon/react-landing-pages"
+    },
+    "keywords": [
+      "react.js, landing-page, bootstrap project"
+    ],
+    "dependencies": {
+      "express": "^4.13.1",
+      "history": "^1.17.0",
+      "jquery": "^2.2.1",
+      "react": "^0.14.1",
+      "react-dom": "^0.14.7",
+      "react-router": "^1.0.3",
+      "webfontloader": "^1.6.21"
+    },
+    "devDependencies": {
+      "babel": "^5.8.20",
+      "babel-core": "^5.8.35",
+      "babel-loader": "^5.3.2",
+      "babel-preset-es2015": "^6.3.13",
+      "babel-preset-react": "^6.3.13",
+      "babel-eslint": "^4.0.5",
+      "classnames": "^2.1.3",
+      "css-loader": "^0.15.6",
+      "node-env-file": "^0.1.8",
+      "node-sass": "^3.2.0",
+      "path": "^0.11.14",
+      "file-loader": "^0.8.4",
+      "react-hot-loader": "^1.2.8",
+      "sass-loader": "^1.0.3",
+      "string-replace-loader": "^1.0.0",
+      "sizzle": "^2.3.0",
+      "string-replace-loader": "^1.0.0",
+      "style-loader": "^0.12.3",
+      "url-loader": "^0.5.6",
+      "webpack": "^1.10.5",
+      "webpack-dev-server": "^1.10.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'F:\development\jldigital\node_modules\node-sass\vendor\win32-x64-48\binding.node'
+      at Error (native)
